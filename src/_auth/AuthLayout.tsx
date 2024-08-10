@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-const AuthLayout = ({ searchParams }: SearchParamProps) => {
+const AuthLayout = () => {
   
   return (
     <div className="flex h-screen max-h-screen">
