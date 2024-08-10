@@ -1,9 +1,8 @@
-import { SignIn } from '@clerk/clerk-react'
   
 const SignInForm = () => {
   return (
     <div>
-      <SignIn />
+      sign in
     </div>
   )
 }
