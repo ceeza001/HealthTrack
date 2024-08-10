@@ -1,14 +1,21 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Navigate } from "react-router-dom";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 
 const RootLayout = () => {
   
   return (
     <>
-      <div className="w-full">
+      <SignedOut>
+        <Navigate to="/sign-in" />
+      </SignedOut>
+      
+      <SignedIn>
+        <div className="w-full">
+          <UserButton />
+          <Outlet />
         
-        <Outlet />
-        
-      </div>
+        </div>
+      </SignedIn>
     </>
   );
 };

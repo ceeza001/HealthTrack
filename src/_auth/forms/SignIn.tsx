@@ -1,9 +1,11 @@
-const SignIn = () => {
+import { SignIn } from '@clerk/clerk-react'
+  
+const SignInForm = () => {
   return (
     <div>
-      sign in
+      <SignIn />
     </div>
   )
 }
 
-export default SignIn;
+export default SignInForm;
