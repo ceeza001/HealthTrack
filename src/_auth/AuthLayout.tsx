@@ -10,7 +10,7 @@ const AuthLayout = () => {
       </SignedIn>
       
       <SignedOut>
-        <div className="flex h-screen max-h-screen">
+        <div className="flex h-[100dvh] max-h-screen">
           <section className="remove-scrollbar container my-auto">
             <div className="sub-container max-w-[496px]">
               <img
@@ -23,12 +23,12 @@ const AuthLayout = () => {
 
               <Outlet />
 
-              <div className="text-14-regular mt-20 flex justify-between">
+              <div className="text-14-regular mt-8 md:mt-20 flex justify-between">
                 <p className="justify-items-end text-dark-600 xl:text-left">
                   © 2024 HealthTrack
                 </p>
                 <Link to="/?admin=true" className="text-green-500">
-                  Admin
+                  Archer Tech
                 </Link>
               </div>
             </div>
